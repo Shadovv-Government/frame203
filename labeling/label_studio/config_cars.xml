@@ -1,0 +1,23 @@
+<!-- Label Studio: рамки класса Car по codebook v1.1 (раздел 8). c = новая рамка Car; атрибуты — у выделенной рамки -->
+<View>
+  <Header value="Изображение $id — рамка на каждый различимый автомобиль класса Car (не Taxi, не Van, не Truck, не Bus)"/>
+  <Image name="image" value="$image" zoom="true" zoomControl="true" rotateControl="false"/>
+  <RectangleLabels name="box" toName="image" strokeWidth="2">
+    <Label value="Car" background="#E8590C" hotkey="c"/>
+  </RectangleLabels>
+  <View visibleWhen="region-selected">
+    <Header value="Атрибуты выделенной рамки (раздел 8.3)" size="6"/>
+    <Choices name="attrs" toName="image" perRegion="true" choice="multiple" showInline="true">
+      <Choice value="occluded"/>
+      <Choice value="truncated"/>
+      <Choice value="group_of"/>
+      <Choice value="depiction"/>
+      <Choice value="inside"/>
+    </Choices>
+  </View>
+  <Choices name="uncertain" toName="image" choice="single" showInline="true">
+    <Choice value="uncertain"/>
+  </Choices>
+  <TextArea name="comment" toName="image" rows="2" maxSubmissions="1"
+            placeholder="Обязательно при uncertain: какой объект и какое правило вызвали сомнение"/>
+</View>

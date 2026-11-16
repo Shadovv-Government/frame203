@@ -1,5 +1,12 @@
 .venv/
+ls-env/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
+data/raw/
+data/images/
+*.zip
+*.tar.gz
+*.7z
+work/

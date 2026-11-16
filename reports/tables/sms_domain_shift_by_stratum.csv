@@ -1,0 +1,6 @@
+stratum,сообщений,"доля верных (порог 0,25)"
+ham_mishra,35,0.971
+ham_personal_other,20,0.95
+ham_personal_sg,20,1.0
+spam_promo,35,0.543
+spam_smishing,40,0.75

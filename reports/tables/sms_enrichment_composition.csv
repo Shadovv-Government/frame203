@@ -1,0 +1,6 @@
+label_src,stratum,source,сообщений
+ham,ham_mishra,Mishra,35
+ham,ham_personal_other,NUS,20
+ham,ham_personal_sg,NUS,20
+spam,spam_promo,Mishra,35
+spam,spam_smishing,Mishra,40
