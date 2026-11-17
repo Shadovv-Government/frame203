@@ -1,0 +1,13 @@
+id,label_A,subtype_A,uncertain_A,comment_A,time_A,label_B,subtype_B,uncertain_B,comment_B,time_B,text,label_src,label_raw,stratum,source
+sms_new_0074,spam,smishing,0,,123.238,spam,promo,0,,154.431,"Plot for Sale in Haridwar At The Bank of Ganga (Ready Possession & Registry) Rs-5000/-P.m Installment Call Y.N.BUILDTECH 9311085505, OR SMS YND 53030",spam,spam,spam_promo,Mishra
+sms_new_0129,ham,,0,,13.037,ham,,1,"короткая формулировка
+",73.09,Grads are in <#>,ham,ham,ham_personal_other,NUS
+sms_new_0068,spam,smishing,1,"0068: вроде личные данные не просят, но может быть фишинговый сайт. Далее если есть ссылка буду отмечать как smishing",125.564,spam,smishing,0,,35.379,We regret to inform you that your NAB card is now locked. To unlock please update security details at http://www.nabmobile,spam,smishing,spam_smishing,Mishra
+sms_new_0098,ham,,0,,5.283,spam,promo,0,,6.313,t need to reply.,ham,ham,ham_personal_sg,NUS
+sms_new_0149,spam,promo,0,,18.232,spam,premium,0,,10.675,Rediscover the deeper meaning of life and the means to attain true peace. Understand the essence of being a true Sikh. Sms JOIN GURUBANI to 09219592195,spam,spam,spam_promo,Mishra
+sms_new_0006,ham,,0,,29.976,ham,,1,нераспознаваемый текст ,36.636,"Adichanga la! Appo edhuvum therila, ippo dhaan semmaya valikudhu!",ham,ham,ham_personal_other,NUS
+sms_new_0050,ham,,0,,28.277,spam,promo,0,,11.735,"Swayamvara By David Hair,'Swayamvara' (The Return of Ravana Book 2) by David Hair is a story of reincarnation, two swayamvaras, 800 years apart, that sees four lives knotted forever & one rigid force, Ravana reborn.",spam,spam,spam_promo,Mishra
+sms_new_0036,spam,fraud,0,,62.96,spam,prize,0,,12.158,It's urgent please Contact me for an UNCLAIMED BEQUEST PAYMENT as the Assigned BENEFICIARY VIA EMAIL infogfreeman@gmail.com Regards Gordon,spam,smishing,spam_smishing,Mishra
+sms_new_0071,spam,smishing,0,,81.208,spam,smishing,1,может быть реально от банка,106.884,"Nationwide has noticed your debit card was recently used on 25-10-2015 13.04.43, at APPLE ONLINE STORE for 1976.00 GBP. If not you please urgently call fraud preventaion on 03303800232 or intl +443303800231. Do not reply by SMS http://www.Nationwide.co.uk/",spam,smishing,spam_smishing,Mishra
+sms_new_0100,spam,smishing,0,,48.677,spam,smishing,1,может быть полезной информацией ,61.123,We would like to inform you that you have been recorded as leaving your home on 3 occasions yesterday. A fine of '35 has been added to your gov.uk'account. For further information please visit'gov.uk/ coronavirus-penalty-payment racking. Protect the NHS. Save lives,spam,smishing,spam_smishing,Mishra
+sms_new_0072,ham,,0,,1.869,ham,,1,я не говорю бурито,18.848,Bhai jawab to de.. Bura mat maan yaar,ham,ham,ham_personal_other,NUS

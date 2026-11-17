@@ -1,0 +1,4142 @@
+[
+    {
+        "id": 31,
+        "annotations": [
+            {
+                "id": 31,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "KxurVJ-sUk",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "8DFpNyOmsb",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:38:39.567503Z",
+                "updated_at": "2026-11-16T19:38:39.567503Z",
+                "draft_created_at": "2026-11-16T19:37:10.725986Z",
+                "lead_time": 154.431,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "8f1d516d-0742-4c82-aed2-9447196f5232",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 31,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0074",
+            "text": "Plot for Sale in Haridwar At The Bank of Ganga (Ready Possession & Registry) Rs-5000\/-P.m Installment Call Y.N.BUILDTECH 9311085505, OR SMS YND 53030"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.539818Z",
+        "updated_at": "2026-11-16T19:38:39.673902Z",
+        "allow_skip": true,
+        "inner_id": 1,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 32,
+        "annotations": [
+            {
+                "id": 32,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "ybtSY8rEnV",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "premium"
+                            ]
+                        },
+                        "id": "_Z5i1lL6MM",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:40:55.089209Z",
+                "updated_at": "2026-11-16T19:40:55.089209Z",
+                "draft_created_at": null,
+                "lead_time": 121.36,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "e433539f-0ce2-4eef-b52d-5d605367ba01",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 32,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0119",
+            "text": "Eerie Nokia tones 4u, rply TONE TITLE to 8007 eg TONE DRACULA to 8007 www.getzed.co.uk POBox36504W45WQ 150p"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.539818Z",
+        "updated_at": "2026-11-16T19:40:55.140273Z",
+        "allow_skip": true,
+        "inner_id": 2,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 33,
+        "annotations": [
+            {
+                "id": 33,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "NpK9DAugS6",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "QRLeGF1kyN",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:41:10.589106Z",
+                "updated_at": "2026-11-16T19:41:10.589106Z",
+                "draft_created_at": null,
+                "lead_time": 14.121,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "5462bc60-5ed9-49db-b0a0-e91241c1225e",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 33,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0065",
+            "text": "PL: Battle Royale! Gilchrist Vs Warne today at 8PM. Click http:\/\/ipl.onmix.mobi\/?src=504 for IPL on mobile. To stop MIX alerts click http:\/\/onmix.mobi\/alert"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.539818Z",
+        "updated_at": "2026-11-16T19:41:10.654054Z",
+        "allow_skip": true,
+        "inner_id": 3,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 34,
+        "annotations": [
+            {
+                "id": 34,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "MGULvZiSAA",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:42:21.023013Z",
+                "updated_at": "2026-11-16T19:42:21.024013Z",
+                "draft_created_at": "2026-11-16T19:41:34.373844Z",
+                "lead_time": 67.896,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "e605c143-7c94-4b1d-9a76-a5de82acfd6c",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 34,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0142",
+            "text": "if anyone calling from a mobile Co. and asks u to type # &lt;#&gt; or # &lt;#&gt; . Do not do so. Disconnect the call,coz it iz an attempt of 'terrorist' to make use of the sim card'."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.539818Z",
+        "updated_at": "2026-11-16T19:42:21.197671Z",
+        "allow_skip": true,
+        "inner_id": 4,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 35,
+        "annotations": [
+            {
+                "id": 35,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "Vv6HWuxm_5",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:42:41.255620Z",
+                "updated_at": "2026-11-16T19:42:41.255620Z",
+                "draft_created_at": null,
+                "lead_time": 4.784,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "16708d5b-5a3b-4a62-97b6-eaea22272a47",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 35,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0069",
+            "text": "Sorry, I'll call later'buzy"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.539818Z",
+        "updated_at": "2026-11-16T19:42:41.340782Z",
+        "allow_skip": true,
+        "inner_id": 5,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 36,
+        "annotations": [
+            {
+                "id": 36,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "9lKsRD9IJ4",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:42:58.257757Z",
+                "updated_at": "2026-11-16T19:42:58.258762Z",
+                "draft_created_at": null,
+                "lead_time": 15.344,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "277affc6-bf48-4cfd-906d-136a186bacfb",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 36,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0013",
+            "text": "Hmmm that's on the list but post rains, yes."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.540805Z",
+        "updated_at": "2026-11-16T19:42:58.313213Z",
+        "allow_skip": true,
+        "inner_id": 6,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 37,
+        "annotations": [
+            {
+                "id": 37,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "M-6aADntWb",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:43:13.452450Z",
+                "updated_at": "2026-11-16T19:43:13.452450Z",
+                "draft_created_at": null,
+                "lead_time": 8.145,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "a7ee8951-0839-4e9f-827a-2a4bd515b8ee",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 37,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0037",
+            "text": "I'm leaving my house now. Will reach in half an hour'"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.540805Z",
+        "updated_at": "2026-11-16T19:43:13.507543Z",
+        "allow_skip": true,
+        "inner_id": 7,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 38,
+        "annotations": [
+            {
+                "id": 38,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "0B1r-vci2O",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:43:28.094699Z",
+                "updated_at": "2026-11-16T19:43:28.094699Z",
+                "draft_created_at": null,
+                "lead_time": 12.982,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "5ab0f5c8-7ac4-4671-80e4-77ded92566fa",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 38,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0057",
+            "text": "We'd also have to be alone in LA at night untik like 5 am"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.540805Z",
+        "updated_at": "2026-11-16T19:43:28.179101Z",
+        "allow_skip": true,
+        "inner_id": 8,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 39,
+        "annotations": [
+            {
+                "id": 39,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "HnJaLPKZtQ",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "SS1K0PWYmm",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:44:22.262228Z",
+                "updated_at": "2026-11-16T19:44:22.262228Z",
+                "draft_created_at": "2026-11-16T19:43:36.772741Z",
+                "lead_time": 52.549,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "01dcbef0-94b5-4348-9a1c-f0b6141149ec",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 39,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0105",
+            "text": "Shop till u Drop, IS IT YOU, either 10K, 5K, £500 Cash or £100 Travel voucher, Call now, 09064011000."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.540805Z",
+        "updated_at": "2026-11-16T19:44:22.336415Z",
+        "allow_skip": true,
+        "inner_id": 9,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 40,
+        "annotations": [
+            {
+                "id": 40,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "U_tI3N2D_u",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:44:44.498077Z",
+                "updated_at": "2026-11-16T19:44:44.498077Z",
+                "draft_created_at": null,
+                "lead_time": 16.338,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "5ac0eba9-40ce-4cf3-b0be-9017bcf312af",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 40,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0133",
+            "text": "I dont have number"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:44:44.582443Z",
+        "allow_skip": true,
+        "inner_id": 10,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 41,
+        "annotations": [
+            {
+                "id": 41,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "uCD0-xTNTT",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "text": [
+                                "короткая формулировка\n"
+                            ]
+                        },
+                        "id": "wR2BBVq0TV",
+                        "from_name": "comment",
+                        "to_name": "text",
+                        "type": "textarea",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "uncertain"
+                            ]
+                        },
+                        "id": "nfc1rPJ99D",
+                        "from_name": "uncertain",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:45:57.174184Z",
+                "updated_at": "2026-11-16T19:46:16.525053Z",
+                "draft_created_at": "2026-11-16T19:45:39.703641Z",
+                "lead_time": 73.09,
+                "prediction": {},
+                "result_count": 3,
+                "unique_id": "8688be3e-00c6-4a33-b5fe-33120095a392",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 41,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0129",
+            "text": "Grads are in <#>"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:46:16.653678Z",
+        "allow_skip": true,
+        "inner_id": 11,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 42,
+        "annotations": [
+            {
+                "id": 42,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "TyosrdPfbl",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:46:03.837499Z",
+                "updated_at": "2026-11-16T19:46:03.837499Z",
+                "draft_created_at": null,
+                "lead_time": 5.062,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "e5723bac-a3bc-4b19-bb98-e04e40bef15d",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 42,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0109",
+            "text": "Ya going today lor."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:46:03.899880Z",
+        "allow_skip": true,
+        "inner_id": 12,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 43,
+        "annotations": [
+            {
+                "id": 43,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "coFZsVkjbQ",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "yLOQTRSEdu",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:46:11.234332Z",
+                "updated_at": "2026-11-16T19:46:11.234332Z",
+                "draft_created_at": null,
+                "lead_time": 6.01,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "e6be5867-6d44-4452-826e-b7ddb8ca102b",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 43,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0144",
+            "text": "YOUR CHANCE TO BE ON A REALITY FANTASY SHOW call now = 08707509020 Just 20p per min NTT Ltd"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:46:11.304227Z",
+        "allow_skip": true,
+        "inner_id": 13,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 44,
+        "annotations": [
+            {
+                "id": 44,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "fSStfsQeA5",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:47:06.511963Z",
+                "updated_at": "2026-11-16T19:47:06.511963Z",
+                "draft_created_at": "2026-11-16T19:46:34.580137Z",
+                "lead_time": 47.643,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "b976ddc2-f47d-48d3-98a8-a029864ab296",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 44,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0031",
+            "text": "Viewing cancelled. The unit is already sold."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:47:06.564952Z",
+        "allow_skip": true,
+        "inner_id": 14,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 45,
+        "annotations": [
+            {
+                "id": 45,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "CFTKmEC0c0",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:47:29.541990Z",
+                "updated_at": "2026-11-16T19:47:29.541990Z",
+                "draft_created_at": null,
+                "lead_time": 21.231,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "58d5c749-93e5-44f9-ad74-fb551d12e254",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 45,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0023",
+            "text": "________ is ________ Study is boring. I hv fild da blanks wid da most apropriat wordz"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.541806Z",
+        "updated_at": "2026-11-16T19:47:29.655237Z",
+        "allow_skip": true,
+        "inner_id": 15,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 46,
+        "annotations": [
+            {
+                "id": 46,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "KdVX1iASql",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:47:46.124619Z",
+                "updated_at": "2026-11-16T19:47:46.124619Z",
+                "draft_created_at": null,
+                "lead_time": 2.68,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "a5a8c539-cb80-4573-a035-764f75d6978f",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 46,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0012",
+            "text": "SO U WEARING TIE?"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.542847Z",
+        "updated_at": "2026-11-16T19:47:46.184184Z",
+        "allow_skip": true,
+        "inner_id": 16,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 47,
+        "annotations": [
+            {
+                "id": 47,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "QxLIu6pDP2",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:47:52.078905Z",
+                "updated_at": "2026-11-16T19:47:52.078905Z",
+                "draft_created_at": null,
+                "lead_time": 4.775,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "fc72ea36-a1c2-4857-b427-c2d7d1d146a0",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 47,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0086",
+            "text": "You're super attractive! I would totally send you a pic if a) I was single, and b) it wasn't totally illegal for me to do so."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.542847Z",
+        "updated_at": "2026-11-16T19:47:52.159901Z",
+        "allow_skip": true,
+        "inner_id": 17,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 48,
+        "annotations": [
+            {
+                "id": 48,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "auIDKpUh9y",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "q7F9qVp3uw",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:48:03.814006Z",
+                "updated_at": "2026-11-16T19:48:03.814006Z",
+                "draft_created_at": null,
+                "lead_time": 9.531,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "d7ad33d5-de43-486f-93a7-edbc9d80bb01",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 48,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0138",
+            "text": "Need to clear doubts before exams? Experienced tutors help is just a click away- Free helpdesk round the clock. Just logon to eAgetutor.com or call 011-46592191"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.542847Z",
+        "updated_at": "2026-11-16T19:48:03.884903Z",
+        "allow_skip": true,
+        "inner_id": 18,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 49,
+        "annotations": [
+            {
+                "id": 49,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "4kdtLXIRFX",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "fjXOOsyUXa",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:48:39.417019Z",
+                "updated_at": "2026-11-16T19:48:39.417019Z",
+                "draft_created_at": "2026-11-16T19:48:38.345171Z",
+                "lead_time": 34.048,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "4ad63e3d-fb23-4cee-bfd1-b9a4127dc13a",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 49,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0076",
+            "text": "Make your career recession proof with 1 year Executive Master program in Information Security, Get qualified for 1,88,000* Jobs. SMS or Call MS @9717470558"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.542847Z",
+        "updated_at": "2026-11-16T19:48:39.487910Z",
+        "allow_skip": true,
+        "inner_id": 19,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 50,
+        "annotations": [
+            {
+                "id": 50,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "1riVbySxfw",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:48:49.854566Z",
+                "updated_at": "2026-11-16T19:48:49.854566Z",
+                "draft_created_at": null,
+                "lead_time": 4.557,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "a89a25ff-ae2d-4e44-91b6-cb62a4be1724",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 50,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0106",
+            "text": "My mum's gonna wait at jurong point for me now. Wanna meet up before I leave?"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.542847Z",
+        "updated_at": "2026-11-16T19:48:49.931516Z",
+        "allow_skip": true,
+        "inner_id": 20,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 51,
+        "annotations": [
+            {
+                "id": 54,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "FZaGkzAQlw",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "dIerHLwfQz",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:52:02.080914Z",
+                "updated_at": "2026-11-16T19:52:02.080914Z",
+                "draft_created_at": "2026-11-16T19:49:07.841102Z",
+                "lead_time": 28.121000000000002,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "230cba67-d0da-4cd7-8160-ae5dfc929c14",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 51,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0067",
+            "text": "Refer to Pg 2 of todays Hindustan Times UNIVERSAL GROUP launches shops in MARKET SQUARE at Golf Course Extn Road, Gurgaon Vishal Batra Investments 9810193057"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.543806Z",
+        "updated_at": "2026-11-16T19:52:02.145910Z",
+        "allow_skip": true,
+        "inner_id": 21,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 52,
+        "annotations": [
+            {
+                "id": 51,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "bv5yMmx4E6",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:49:57.104632Z",
+                "updated_at": "2026-11-16T19:49:57.104632Z",
+                "draft_created_at": null,
+                "lead_time": 4.332,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "03bbe477-95bb-4446-96f3-affb0a7b7f27",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 52,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0123",
+            "text": "Sorry, I'll call later'hope u understand.."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.543806Z",
+        "updated_at": "2026-11-16T19:49:57.168106Z",
+        "allow_skip": true,
+        "inner_id": 22,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 53,
+        "annotations": [
+            {
+                "id": 52,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "10cyItWln5",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "qhLd63r3jD",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:50:33.536572Z",
+                "updated_at": "2026-11-16T19:50:33.536572Z",
+                "draft_created_at": "2026-11-16T19:50:08.249804Z",
+                "lead_time": 35.379,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "47ac4c83-8db5-4fd7-af2f-a60cec839463",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 53,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0068",
+            "text": "We regret to inform you that your NAB card is now locked. To unlock please update security details at http:\/\/www.nabmobile"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.543806Z",
+        "updated_at": "2026-11-16T19:50:33.615172Z",
+        "allow_skip": true,
+        "inner_id": 23,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 54,
+        "annotations": [
+            {
+                "id": 53,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "w2MxZ8O0ZZ",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:51:40.094328Z",
+                "updated_at": "2026-11-16T19:51:40.094328Z",
+                "draft_created_at": null,
+                "lead_time": 56.391,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "d29f5666-c84a-4af9-9404-4a225c897582",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 54,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0045",
+            "text": "Hahaha my alarm clock rang! haha coz raghav smsed me! Oh help mecheck my email for the prom email if your com is on! My pw is 2oo <#>hahaha I dunno what I am yet! Increase to <#> haha but includeseverything like transport and haircut and new clothes etc haha:P Ithink I should save like at least a hundred though haha! Ohh going tomeet him now! Whatcha going to do today?"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.543806Z",
+        "updated_at": "2026-11-16T19:51:40.142702Z",
+        "allow_skip": true,
+        "inner_id": 24,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 55,
+        "annotations": [
+            {
+                "id": 55,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "A0zt9ovxQF",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "DOxSU2BXvp",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:52:16.753689Z",
+                "updated_at": "2026-11-16T19:52:16.753689Z",
+                "draft_created_at": "2026-11-16T19:52:15.273186Z",
+                "lead_time": 11.883,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "79f766f2-8c8f-48b4-9bf5-10bff566efce",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 55,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0124",
+            "text": "Property Bhi Aapki Rent Bhi Aapka, Invest Rs 17k Lacs in Fully Furnished Office Spaces & Earn Rs 17k per Month Wid Bank Guarantee, Noida Cont.9990584817"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.543806Z",
+        "updated_at": "2026-11-16T19:52:16.850462Z",
+        "allow_skip": true,
+        "inner_id": 25,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 56,
+        "annotations": [
+            {
+                "id": 56,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "KUiskLxLMN",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "qOHPeBxlXT",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:06.906220Z",
+                "updated_at": "2026-11-16T19:53:06.906220Z",
+                "draft_created_at": "2026-11-16T19:52:40.249444Z",
+                "lead_time": 48.926,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "3b36d79d-f49a-4835-956f-ee2e97bca527",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 56,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0025",
+            "text": "We have received a request from you for purchasing Paytm Payments Bank FASTag. Total amount to be paid is Rs 250\/- (Tag Cost Rs. 100 Security Deposit Rs. 0, Threshold -Rs. 150). In case of any queries, please contact us at https:\/\/m.paytm.me\/fastag-help"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.544809Z",
+        "updated_at": "2026-11-16T19:53:06.965061Z",
+        "allow_skip": true,
+        "inner_id": 26,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 57,
+        "annotations": [
+            {
+                "id": 57,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "0k2PGg7Nbw",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "prize"
+                            ]
+                        },
+                        "id": "tbfdTOCzsu",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:20.971163Z",
+                "updated_at": "2026-11-16T19:53:20.971163Z",
+                "draft_created_at": null,
+                "lead_time": 12.186,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "0566cc85-ef3a-40ee-aa19-47d5b345f374",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 57,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0048",
+            "text": "Dear V0DAF0NE Customer,You are a 5,00,000 winner of Guaranteed Caller Prize, this is our Final attempt to contact you! To Claim Call 7908807538 Now!"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.544809Z",
+        "updated_at": "2026-11-16T19:53:21.045178Z",
+        "allow_skip": true,
+        "inner_id": 27,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 58,
+        "annotations": [
+            {
+                "id": 58,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "6uOwKK333W",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "3d5GZ6baeW",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:28.689857Z",
+                "updated_at": "2026-11-16T19:53:28.690588Z",
+                "draft_created_at": null,
+                "lead_time": 6.313,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "f2d2609e-97d1-4171-82f2-cb9045850836",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 58,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0098",
+            "text": "t need to reply."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.544809Z",
+        "updated_at": "2026-11-16T19:53:28.779133Z",
+        "allow_skip": true,
+        "inner_id": 28,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 59,
+        "annotations": [
+            {
+                "id": 59,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "QEQwhD0vCe",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:39.192607Z",
+                "updated_at": "2026-11-16T19:53:39.192607Z",
+                "draft_created_at": null,
+                "lead_time": 6.899,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "d4632255-1c57-40a1-8312-a7840f831689",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 59,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0034",
+            "text": "Ya. Help u to take practice exam paper is it? Haha."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.544809Z",
+        "updated_at": "2026-11-16T19:53:39.262902Z",
+        "allow_skip": true,
+        "inner_id": 29,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 60,
+        "annotations": [
+            {
+                "id": 60,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "tN-u3XQ4dc",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:44.519050Z",
+                "updated_at": "2026-11-16T19:53:44.519050Z",
+                "draft_created_at": null,
+                "lead_time": 4.17,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "21e96b6d-f0ab-48d7-b6ef-566e76a3cfcc",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 60,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0102",
+            "text": "Ok set keep in touch! :)"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.544809Z",
+        "updated_at": "2026-11-16T19:53:44.579233Z",
+        "allow_skip": true,
+        "inner_id": 30,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 61,
+        "annotations": [
+            {
+                "id": 61,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "c7YLNF1E2I",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "premium"
+                            ]
+                        },
+                        "id": "XCqsc9bwSs",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:53:54.545899Z",
+                "updated_at": "2026-11-16T19:53:54.545899Z",
+                "draft_created_at": null,
+                "lead_time": 8.635,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "70faa54d-0380-41d1-ad21-5c5208335595",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 61,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0085",
+            "text": "Over 3,0,000 songs on the www, music. nokia.com. Download 5 free tracks from the Nokia Music Store. Download now at http:\/\/music.nokia.co.in\/myn5free"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.545817Z",
+        "updated_at": "2026-11-16T19:53:54.608176Z",
+        "allow_skip": true,
+        "inner_id": 31,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 62,
+        "annotations": [
+            {
+                "id": 62,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "k2kK8TpXiW",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "premium"
+                            ]
+                        },
+                        "id": "sVy6tDpZLT",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:54:06.596089Z",
+                "updated_at": "2026-11-16T19:54:06.596089Z",
+                "draft_created_at": null,
+                "lead_time": 10.675,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "d2ca6e3e-090a-4168-8dbd-860f7a1ea186",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 62,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0149",
+            "text": "Rediscover the deeper meaning of life and the means to attain true peace. Understand the essence of being a true Sikh. Sms JOIN GURUBANI to 09219592195"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.545817Z",
+        "updated_at": "2026-11-16T19:54:06.675462Z",
+        "allow_skip": true,
+        "inner_id": 32,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 63,
+        "annotations": [
+            {
+                "id": 63,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "XzRe4FmPY7",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "uncertain"
+                            ]
+                        },
+                        "id": "l7jHLKdc6b",
+                        "from_name": "uncertain",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "text": [
+                                "нераспознаваемый текст "
+                            ]
+                        },
+                        "id": "QVPZYl0Asr",
+                        "from_name": "comment",
+                        "to_name": "text",
+                        "type": "textarea",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:54:44.904078Z",
+                "updated_at": "2026-11-16T19:54:44.904078Z",
+                "draft_created_at": "2026-11-16T19:54:29.891939Z",
+                "lead_time": 36.636,
+                "prediction": {},
+                "result_count": 3,
+                "unique_id": "141e5f0b-2067-42b4-8a87-0dd052825043",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 63,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0006",
+            "text": "Adichanga la! Appo edhuvum therila, ippo dhaan semmaya valikudhu!"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.545817Z",
+        "updated_at": "2026-11-16T19:54:44.964551Z",
+        "allow_skip": true,
+        "inner_id": 33,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 64,
+        "annotations": [
+            {
+                "id": 64,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "ju9eQ2x8Pc",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "s9LAx92rHo",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:54:59.492295Z",
+                "updated_at": "2026-11-16T19:54:59.492295Z",
+                "draft_created_at": null,
+                "lead_time": 11.735,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "22cd65f0-3bea-4b03-8cb0-69278f951e98",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 64,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0050",
+            "text": "Swayamvara By David Hair,'Swayamvara' (The Return of Ravana Book 2) by David Hair is a story of reincarnation, two swayamvaras, 800 years apart, that sees four lives knotted forever & one rigid force, Ravana reborn."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.545817Z",
+        "updated_at": "2026-11-16T19:54:59.542881Z",
+        "allow_skip": true,
+        "inner_id": 34,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 65,
+        "annotations": [
+            {
+                "id": 65,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "gUxiNReY0t",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "prize"
+                            ]
+                        },
+                        "id": "plDwdrLSVx",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:55:12.877681Z",
+                "updated_at": "2026-11-16T19:55:12.877681Z",
+                "draft_created_at": null,
+                "lead_time": 12.158,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "998d1232-8069-4b50-8116-ce2540c9072f",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 65,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0036",
+            "text": "It's urgent please Contact me for an UNCLAIMED BEQUEST PAYMENT as the Assigned BENEFICIARY VIA EMAIL infogfreeman@gmail.com Regards Gordon"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.545817Z",
+        "updated_at": "2026-11-16T19:55:12.934303Z",
+        "allow_skip": true,
+        "inner_id": 35,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 66,
+        "annotations": [
+            {
+                "id": 66,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "khiSP_h7mm",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "jjNxxraC4m",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:55:23.678928Z",
+                "updated_at": "2026-11-16T19:55:23.678928Z",
+                "draft_created_at": null,
+                "lead_time": 9.382,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "1ae23228-a628-4a06-9bd5-b0414d2c3a1c",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 66,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0081",
+            "text": "$9 Only!Sales on Official Oakley Sunglasses Online Store. 2016 New Styles All Up To 75% OFF. Final Day Flash Sale And Free Returns. Official Oakley Sunglasses Outlets At: http:\/\/ www.oakleyoutletsco.com"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.546827Z",
+        "updated_at": "2026-11-16T19:55:23.743543Z",
+        "allow_skip": true,
+        "inner_id": 36,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 67,
+        "annotations": [
+            {
+                "id": 67,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "9ncRgakkug",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:55:30.124556Z",
+                "updated_at": "2026-11-16T19:55:30.124556Z",
+                "draft_created_at": null,
+                "lead_time": 4.16,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "038362c3-095d-4c48-bfa6-32eed2f15929",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 67,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0035",
+            "text": "I cant pick the phone right now. Call later"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.546827Z",
+        "updated_at": "2026-11-16T19:55:30.185586Z",
+        "allow_skip": true,
+        "inner_id": 37,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 68,
+        "annotations": [
+            {
+                "id": 68,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "ngIQXTJj-8",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "uncertain"
+                            ]
+                        },
+                        "id": "S-7ISrrKPu",
+                        "from_name": "uncertain",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "text": [
+                                "может быть реально от банка"
+                            ]
+                        },
+                        "id": "NUABiB59f7",
+                        "from_name": "comment",
+                        "to_name": "text",
+                        "type": "textarea",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "B68zKi5nKl",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:18.352316Z",
+                "updated_at": "2026-11-16T19:57:18.352316Z",
+                "draft_created_at": "2026-11-16T19:55:56.377046Z",
+                "lead_time": 106.884,
+                "prediction": {},
+                "result_count": 4,
+                "unique_id": "2cf26280-8b07-48f0-9fbc-bd2ad8229c89",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 68,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0071",
+            "text": "Nationwide has noticed your debit card was recently used on 25-10-2015 13.04.43, at APPLE ONLINE STORE for 1976.00 GBP. If not you please urgently call fraud preventaion on 03303800232 or intl +443303800231. Do not reply by SMS http:\/\/www.Nationwide.co.uk\/"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.546827Z",
+        "updated_at": "2026-11-16T19:57:18.400722Z",
+        "allow_skip": true,
+        "inner_id": 38,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 69,
+        "annotations": [
+            {
+                "id": 69,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "DtpbPZV7f0",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:26.162068Z",
+                "updated_at": "2026-11-16T19:57:26.162068Z",
+                "draft_created_at": null,
+                "lead_time": 4.83,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "b76b83fe-13bb-4c0a-b215-8b35997a13b7",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 69,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0135",
+            "text": "Thanks ah. Jason not in singapore already."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.546827Z",
+        "updated_at": "2026-11-16T19:57:26.262467Z",
+        "allow_skip": true,
+        "inner_id": 39,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 70,
+        "annotations": [
+            {
+                "id": 70,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "XvkF_7SloJ",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:31.906943Z",
+                "updated_at": "2026-11-16T19:57:31.906943Z",
+                "draft_created_at": null,
+                "lead_time": 4.614,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "111b968c-fb6c-4b20-a566-7b84c862b07b",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 70,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0014",
+            "text": "Hmm tonight I can't. Only afternoon and tmr anytime. Blk <#>serangoon north ave 4 # <#>"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.546827Z",
+        "updated_at": "2026-11-16T19:57:31.987064Z",
+        "allow_skip": true,
+        "inner_id": 40,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 71,
+        "annotations": [
+            {
+                "id": 71,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "NDUjzJ6R98",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:37.471848Z",
+                "updated_at": "2026-11-16T19:57:37.471848Z",
+                "draft_created_at": null,
+                "lead_time": 4.373,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "5b8fc181-f4dd-41cf-8143-2c3c1ccbcf90",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 71,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0113",
+            "text": "Sorry, I'll call later..hv some work.."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.547806Z",
+        "updated_at": "2026-11-16T19:57:37.551744Z",
+        "allow_skip": true,
+        "inner_id": 41,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 72,
+        "annotations": [
+            {
+                "id": 72,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "fy8luhfIom",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:42.013798Z",
+                "updated_at": "2026-11-16T19:57:42.013798Z",
+                "draft_created_at": null,
+                "lead_time": 3.029,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "76ec8ff1-5bb3-442b-872e-a819fa0a0fbe",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 72,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0064",
+            "text": "I already told know."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.547806Z",
+        "updated_at": "2026-11-16T19:57:42.081399Z",
+        "allow_skip": true,
+        "inner_id": 42,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 73,
+        "annotations": [
+            {
+                "id": 73,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "s0oLc7sg_M",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "0az6RfdDwB",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:57:57.391669Z",
+                "updated_at": "2026-11-16T19:57:57.391669Z",
+                "draft_created_at": null,
+                "lead_time": 14.051,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "20ac76e2-697a-49a0-8fe3-9832fe738f5d",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 73,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0140",
+            "text": "Rate Revsng soon.Xperience Beachside Living.Supertch Holiday Village.Xpandabl Villas at Yamuna XprswaySize 1575\/2200 sf@27 lac onwrdsCall: 9999060692"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.547806Z",
+        "updated_at": "2026-11-16T19:57:57.461763Z",
+        "allow_skip": true,
+        "inner_id": 43,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 74,
+        "annotations": [
+            {
+                "id": 74,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "0Q-v504bbo",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:58:04.410663Z",
+                "updated_at": "2026-11-16T19:58:04.410663Z",
+                "draft_created_at": null,
+                "lead_time": 5.906,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "6004cce2-63b4-41cd-b66c-f12dcb3d4e38",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 74,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0059",
+            "text": "It could work, I hope so'I am sure that we'll reach a decision at the next meeting"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.547806Z",
+        "updated_at": "2026-11-16T19:58:04.481307Z",
+        "allow_skip": true,
+        "inner_id": 44,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 75,
+        "annotations": [
+            {
+                "id": 75,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "Pr7gPFZSWb",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "R8tFosObx1",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:58:12.448838Z",
+                "updated_at": "2026-11-16T19:58:12.448838Z",
+                "draft_created_at": null,
+                "lead_time": 7.046,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "e92e4579-96aa-4c1f-8367-c3c9e1130fd0",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 75,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0049",
+            "text": "New Offer! Save upto 40\\% electricity bill with Power Saver(GOVT. LAB TESTED), Rs. 1050\/-(free home delivery) 3 Yr. Guarantee Call 9891943823,9891943780"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.547806Z",
+        "updated_at": "2026-11-16T19:58:12.509508Z",
+        "allow_skip": true,
+        "inner_id": 45,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 76,
+        "annotations": [
+            {
+                "id": 76,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "miZRuba5Gk",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:58:19.585676Z",
+                "updated_at": "2026-11-16T19:58:19.585676Z",
+                "draft_created_at": null,
+                "lead_time": 5.689,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "6689d293-08e6-49d3-8c33-b72992f176d9",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 76,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0089",
+            "text": "I dont thnk its a wrong discussion..."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.548808Z",
+        "updated_at": "2026-11-16T19:58:19.653572Z",
+        "allow_skip": true,
+        "inner_id": 46,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 77,
+        "annotations": [
+            {
+                "id": 77,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "sp4QoVlgvK",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "rnNe3m-Df_",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:59:19.679059Z",
+                "updated_at": "2026-11-16T19:59:19.679059Z",
+                "draft_created_at": "2026-11-16T19:58:41.532492Z",
+                "lead_time": 58.266,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "3574e6e7-8751-4bc7-9884-90aa340ce8e4",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 77,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0022",
+            "text": "RMO.00 R.HB: RM4388.00 Was Charged On Your Card Numer 9577 at AwG-KLIA2 On 24\/10\/16 1032:29 Reference Code 342152 Call 03216837293 if u did NOT perform this Txn"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.548808Z",
+        "updated_at": "2026-11-16T19:59:19.735201Z",
+        "allow_skip": true,
+        "inner_id": 47,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 78,
+        "annotations": [
+            {
+                "id": 78,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "GzqsjT7Vkv",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:59:27.098768Z",
+                "updated_at": "2026-11-16T19:59:27.098768Z",
+                "draft_created_at": null,
+                "lead_time": 5.74,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "43b27fb9-8a15-48fe-8b48-2eaa3be46f10",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 78,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0058",
+            "text": "No dear. . Tanu going to talk in surya tv"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.548808Z",
+        "updated_at": "2026-11-16T19:59:27.176466Z",
+        "allow_skip": true,
+        "inner_id": 48,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 79,
+        "annotations": [
+            {
+                "id": 79,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "valRRTZVw9",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T19:59:47.333452Z",
+                "updated_at": "2026-11-16T19:59:47.333452Z",
+                "draft_created_at": "2026-11-16T19:59:45.376323Z",
+                "lead_time": 18.93,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "e9a6722c-3405-4d36-a52f-a3576bc40ca3",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 79,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0002",
+            "text": "Waa I tink I more free on weekdays le. Latest by when can I tell u"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.548808Z",
+        "updated_at": "2026-11-16T19:59:47.400508Z",
+        "allow_skip": true,
+        "inner_id": 49,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 80,
+        "annotations": [
+            {
+                "id": 80,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "2cnSogHlMv",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:00:00.726897Z",
+                "updated_at": "2026-11-16T20:00:00.726897Z",
+                "draft_created_at": null,
+                "lead_time": 4.715,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "cb84760b-1700-4a37-bc6d-2ba9b0bc180f",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 80,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0104",
+            "text": "I hate when she does this. She turns what should be a fun day into an annoying day of quarrels."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.548808Z",
+        "updated_at": "2026-11-16T20:00:00.815988Z",
+        "allow_skip": true,
+        "inner_id": 50,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 81,
+        "annotations": [
+            {
+                "id": 81,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "s3xcE3bulN",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "WB8hXPvC9V",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "uncertain"
+                            ]
+                        },
+                        "id": "touMfYvTF-",
+                        "from_name": "uncertain",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "text": [
+                                "может быть полезной информацией "
+                            ]
+                        },
+                        "id": "GYfOb1ppVF",
+                        "from_name": "comment",
+                        "to_name": "text",
+                        "type": "textarea",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:01:02.976020Z",
+                "updated_at": "2026-11-16T20:01:02.976020Z",
+                "draft_created_at": "2026-11-16T20:00:36.904679Z",
+                "lead_time": 61.123,
+                "prediction": {},
+                "result_count": 4,
+                "unique_id": "22ea7d58-f4da-4ce1-bdff-4063a68002f3",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 81,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0100",
+            "text": "We would like to inform you that you have been recorded as leaving your home on 3 occasions yesterday. A fine of '35 has been added to your gov.uk'account. For further information please visit'gov.uk\/ coronavirus-penalty-payment racking. Protect the NHS. Save lives"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.549877Z",
+        "updated_at": "2026-11-16T20:01:03.040987Z",
+        "allow_skip": true,
+        "inner_id": 51,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 82,
+        "annotations": [
+            {
+                "id": 82,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "HQh-eHHDFE",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:01:07.605211Z",
+                "updated_at": "2026-11-16T20:01:07.605211Z",
+                "draft_created_at": null,
+                "lead_time": 3.279,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "8b001ca6-9284-4d3d-aad7-7f11f82333fb",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 82,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0117",
+            "text": "Ok'smart work!!"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.549877Z",
+        "updated_at": "2026-11-16T20:01:07.667146Z",
+        "allow_skip": true,
+        "inner_id": 52,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 83,
+        "annotations": [
+            {
+                "id": 83,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "wXCCgOawMF",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:01:12.781230Z",
+                "updated_at": "2026-11-16T20:01:12.781230Z",
+                "draft_created_at": null,
+                "lead_time": 1.914,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "a5bf0831-842c-43f3-8209-e6359219e158",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 83,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0088",
+            "text": "Y so late still havent slp yet?"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.562875Z",
+        "updated_at": "2026-11-16T20:01:12.851981Z",
+        "allow_skip": true,
+        "inner_id": 53,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 84,
+        "annotations": [
+            {
+                "id": 84,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "KUQtG65hRx",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:01:15.564198Z",
+                "updated_at": "2026-11-16T20:01:15.564198Z",
+                "draft_created_at": null,
+                "lead_time": 1.334,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "d1e48807-2009-4af1-a785-e1f3562ae90c",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 84,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0075",
+            "text": "Okie'wonderful!!"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.562875Z",
+        "updated_at": "2026-11-16T20:01:15.620199Z",
+        "allow_skip": true,
+        "inner_id": 54,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 85,
+        "annotations": [
+            {
+                "id": 85,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "IUB4rbG3Oy",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:01:18.774368Z",
+                "updated_at": "2026-11-16T20:01:18.774368Z",
+                "draft_created_at": null,
+                "lead_time": 2.159,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "e20f8e47-43ce-4358-8b5a-c08cb87e490e",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 85,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0021",
+            "text": "Yup. Bring to practice :-)"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.562875Z",
+        "updated_at": "2026-11-16T20:01:18.837803Z",
+        "allow_skip": true,
+        "inner_id": 55,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 86,
+        "annotations": [
+            {
+                "id": 86,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "text": [
+                                "я не говорю бурито"
+                            ]
+                        },
+                        "id": "KnB5rivufR",
+                        "from_name": "comment",
+                        "to_name": "text",
+                        "type": "textarea",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "2vVab0Pd7r",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "uncertain"
+                            ]
+                        },
+                        "id": "akqim1GvWi",
+                        "from_name": "uncertain",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:02:03.523773Z",
+                "updated_at": "2026-11-16T20:02:03.523773Z",
+                "draft_created_at": "2026-11-16T20:01:59.774561Z",
+                "lead_time": 18.848,
+                "prediction": {},
+                "result_count": 3,
+                "unique_id": "dbf945b2-2da1-4ecc-b143-d4766bebfde9",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 86,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0072",
+            "text": "Bhai jawab to de.. Bura mat maan yaar"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.563821Z",
+        "updated_at": "2026-11-16T20:02:03.589687Z",
+        "allow_skip": true,
+        "inner_id": 56,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 87,
+        "annotations": [
+            {
+                "id": 87,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "gdeHpGQBH0",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "smishing"
+                            ]
+                        },
+                        "id": "o-bJBHpVeH",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:02:34.618828Z",
+                "updated_at": "2026-11-16T20:02:34.618828Z",
+                "draft_created_at": "2026-11-16T20:02:33.637095Z",
+                "lead_time": 29.82,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "8a2c8114-aaf0-4470-bc3e-355b5019917f",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 87,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0107",
+            "text": "Dear customer, Due to BVN system upgrade, your ATM CARD has been de-activated by CBN. To re-activate call customer care 08167340838 for help."
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.563821Z",
+        "updated_at": "2026-11-16T20:02:34.685273Z",
+        "allow_skip": true,
+        "inner_id": 57,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 88,
+        "annotations": [
+            {
+                "id": 88,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "D4HM5MmoxD",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:02:42.635995Z",
+                "updated_at": "2026-11-16T20:02:42.635995Z",
+                "draft_created_at": null,
+                "lead_time": 6.886,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "39338f50-9921-4b16-82a9-7c0f3cb46e91",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 88,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0015",
+            "text": "sorry, missed ur message"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.563821Z",
+        "updated_at": "2026-11-16T20:02:42.713267Z",
+        "allow_skip": true,
+        "inner_id": 58,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 89,
+        "annotations": [
+            {
+                "id": 89,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "spam"
+                            ]
+                        },
+                        "id": "pqxvK4Ese_",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    },
+                    {
+                        "value": {
+                            "choices": [
+                                "promo"
+                            ]
+                        },
+                        "id": "IMq3qEWvoj",
+                        "from_name": "subtype",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:03:13.633429Z",
+                "updated_at": "2026-11-16T20:03:13.633429Z",
+                "draft_created_at": null,
+                "lead_time": 26.623,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "f85b09fe-17fe-4fa4-a8ec-bc83eab96f90",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 89,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0093",
+            "text": "Navratra Special Launching 9th oct. CHD presnts Phase-3 of Avenue71, Shona Road, Gurgaon *@Rs.4150\/- Lease Rs.400\/- as Inaugural discount Sms ICD to 54999"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.563821Z",
+        "updated_at": "2026-11-16T20:03:13.693331Z",
+        "allow_skip": true,
+        "inner_id": 59,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    },
+    {
+        "id": 90,
+        "annotations": [
+            {
+                "id": 90,
+                "completed_by": 1,
+                "result": [
+                    {
+                        "value": {
+                            "choices": [
+                                "ham"
+                            ]
+                        },
+                        "id": "gPaAF51qKf",
+                        "from_name": "label",
+                        "to_name": "text",
+                        "type": "choices",
+                        "origin": "manual"
+                    }
+                ],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2026-11-16T20:03:19.254942Z",
+                "updated_at": "2026-11-16T20:03:19.254942Z",
+                "draft_created_at": null,
+                "lead_time": 4.315,
+                "prediction": {},
+                "result_count": 1,
+                "unique_id": "d92d0898-ca54-41dd-96f7-8d06eb280d56",
+                "import_id": null,
+                "last_action": null,
+                "bulk_created": false,
+                "task": 90,
+                "project": 1,
+                "updated_by": 1,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": null
+            }
+        ],
+        "file_upload": "4709d806-import_sms_pilot.csv",
+        "drafts": [],
+        "predictions": [],
+        "data": {
+            "id": "sms_new_0103",
+            "text": "Hihi.. Wana ask you if you still have your computer graphics book? :)"
+        },
+        "meta": {},
+        "created_at": "2026-11-16T16:50:26.564884Z",
+        "updated_at": "2026-11-16T20:03:19.320536Z",
+        "allow_skip": true,
+        "inner_id": 60,
+        "total_annotations": 1,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 1,
+        "updated_by": 1,
+        "comment_authors": []
+    }
+]
