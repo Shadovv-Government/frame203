@@ -1,4 +1,4 @@
-"""Согласие двух аннотаторов по выгрузкам Label Studio (Export -> JSON) — codebook v1.1, раздел 9.
+"""Согласие двух аннотаторов по выгрузкам Label Studio (Export -> JSON) — codebook v1.2, раздел 9.
 
 Текст:       python src/agreement.py sms  --a A.json --b B.json
 Изображения: python src/agreement.py cars --a A.json --b B.json
@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -17,11 +18,12 @@ import pandas as pd
 from scipy.optimize import linear_sum_assignment
 from sklearn.metrics import cohen_kappa_score
 
-ROOT = Path(__file__).resolve().parents[1]
+from annotation_sets import ROOT, STAGES, expected_ids, stage_dir
 OUT = ROOT / "reports" / "agreement"
+STAGE = "pilot"
 SEED = 42
 ATTRS = ["occluded", "truncated", "group_of", "depiction", "inside"]
-IOU_MATCH = 0.5          # порог сопоставления рамок (лекция 15: IoU > 0,5 — один объект)
+IOU_MATCH = 0.5
 
 
 # ---------------- общие функции ----------------
@@ -36,6 +38,22 @@ def load_tasks(path: Path) -> list[dict]:
         out.append({"id": t["data"]["id"], "data": t["data"], "result": a.get("result", []),
                     "lead_time": float(a.get("lead_time") or np.nan)})
     return out
+
+
+def validate_pair(task: str, stage: str, a_path: Path, b_path: Path) -> None:
+    if a_path.resolve() == b_path.resolve() or a_path.read_bytes() == b_path.read_bytes():
+        raise ValueError("Для A и B нужны две разные независимые выгрузки")
+    expected = expected_ids(task, stage)
+    field = "text" if task == "sms" else "image"
+    payloads = []
+    for path in (a_path, b_path):
+        tasks = load_tasks(path)
+        counts = Counter(t["id"] for t in tasks)
+        if set(counts) != expected or any(n != 1 for n in counts.values()):
+            raise ValueError(f"{path.name}: набор ID не соответствует {stage}; запустите check_exports.py")
+        payloads.append({t["id"]: t["data"][field] for t in tasks})
+    if payloads[0] != payloads[1]:
+        raise ValueError("У A и B различаются тексты или ссылки на изображения для одинаковых ID")
 
 
 def choice(result: list[dict], name: str) -> str:
@@ -91,13 +109,13 @@ def save(name: str, items: pd.DataFrame, metrics: dict, disagreements: pd.DataFr
 
 def write_template(name: str, res: pd.DataFrame) -> None:
     """labeling/resolution/<задача>_resolution.csv — не перезаписывается, если сверка уже начата."""
-    path = ROOT / "labeling" / "resolution" / f"{name}_resolution.csv"
+    path = stage_dir(ROOT / "labeling" / "resolution", STAGE) / f"{name}_resolution.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists():
         print(f"шаблон сверки уже есть, не перезаписан: {path}")
         return
     res.to_csv(path, index=False, encoding="utf-8-sig")       # utf-8-sig — чтобы Excel открыл кириллицу
-    print(f"шаблон сверки: {path} — заполнить на сверке, затем python src/build_gold.py {name}")
+    print(f"шаблон сверки: {path} — заполнить на сверке, затем python src/build_gold.py {name} --tag {STAGE}")
 
 
 # ---------------- текст ----------------
@@ -118,22 +136,24 @@ def sms(a_path: Path, b_path: Path) -> None:
     k, lo, hi = kappa_ci(d.label_A, d.label_B)
     both_spam = d[(d.label_A == "spam") & (d.label_B == "spam")]
     agree = d.label_A == d.label_B
+    alpha = krippendorff_alpha_nominal(d.label_A, d.label_B)
+    subtype_pa = (both_spam.subtype_A == both_spam.subtype_B).mean()
     m = {
         "объектов, размеченных обоими": len(d),
         "Percentage Agreement (метка)": round(agree.mean(), 4),
         "Cohen's kappa (метка)": round(k, 4),
         "kappa, 95 % ДИ (бутстрэп)": f"{lo:.3f}–{hi:.3f}",
-        "Krippendorff alpha (метка)": round(krippendorff_alpha_nominal(d.label_A, d.label_B), 4),
-        "PA подтипа (оба spam)": round((both_spam.subtype_A == both_spam.subtype_B).mean(), 4) if len(both_spam) else "—",
+        "Krippendorff alpha (метка)": round(alpha, 4),
+        "PA подтипа (оба spam)": round(subtype_pa, 4) if len(both_spam) else "—",
         "доля uncertain, A / B": f"{d.uncertain_A.mean():.3f} / {d.uncertain_B.mean():.3f}",
         "медиана времени, с (A / B)": f"{d.time_A.median():.1f} / {d.time_B.median():.1f}",
         "суммарное время, мин (A / B)": f"{d.time_A.sum() / 60:.1f} / {d.time_B.sum() / 60:.1f}",
     }
     gold = d[agree]
     m["совпадение с меткой источника (где A = B)"] = round((gold.label_A == gold.label_src).mean(), 4)
-    m["пороги codebook (PA ≥ 0,90; kappa ≥ 0,75; uncertain ≤ 0,10)"] = (
-        "выполнены" if agree.mean() >= 0.90 and k >= 0.75 and max(d.uncertain_A.mean(), d.uncertain_B.mean()) <= 0.10
-        else "НЕ выполнены — разбор и повтор пилота")
+    ok = (agree.mean() >= 0.90 and k >= 0.75 and alpha >= 0.80 and subtype_pa >= 0.80
+          and max(d.uncertain_A.mean(), d.uncertain_B.mean()) <= 0.10)
+    m["пороги codebook v1.2 (таблица 13)"] = "выполнены" if ok else "НЕ выполнены"
     dis = d[~agree | (d.subtype_A != d.subtype_B) | (d.uncertain_A + d.uncertain_B > 0)]
     save("sms", d, m, dis)
     # шаблон сверки: gold заполнен там, где метка и подтип совпали; остальное решается на сверке
@@ -141,7 +161,9 @@ def sms(a_path: Path, b_path: Path) -> None:
     same = (res.label_A == res.label_B) & (res.subtype_A == res.subtype_B)
     res["gold_label"] = np.where(same, res.label_A, "")
     res["gold_subtype"] = np.where(same, res.subtype_A, "")
+    res["exclude"] = ""
     res["note"] = ""
+    res["reviewed"] = ""
     write_template("sms", res)
 
 
@@ -176,8 +198,11 @@ def cars(a_path: Path, b_path: Path) -> None:
         matched = []
         if ba and bb:
             m = np.array([[iou(p, q) for q in bb] for p in ba])
-            r_idx, c_idx = linear_sum_assignment(-m)          # максимизация суммарного IoU
-            matched = [(i, j, m[i, j]) for i, j in zip(r_idx, c_idx) if m[i, j] >= IOU_MATCH]
+            valid = m >= IOU_MATCH
+            # Сначала максимум допустимых пар, затем максимальная сумма их IoU.
+            score = np.where(valid, min(m.shape) + 1 + m, 0)
+            r_idx, c_idx = linear_sum_assignment(score, maximize=True)
+            matched = [(i, j, m[i, j]) for i, j in zip(r_idx, c_idx) if valid[i, j]]
         mi = {i for i, _, _ in matched}
         mj = {j for _, j, _ in matched}
         for i, j, v in matched:
@@ -198,7 +223,12 @@ def cars(a_path: Path, b_path: Path) -> None:
                           "time_A": ta[img_id]["lead_time"], "time_B": tb[img_id]["lead_time"],
                           "uncertain_A": int(choice(ta[img_id]["result"], "uncertain") == "uncertain"),
                           "uncertain_B": int(choice(tb[img_id]["result"], "uncertain") == "uncertain")})
-    p, im = pd.DataFrame(pairs), pd.DataFrame(per_image)
+    attrs_and_coords = [f"{a}_{side}" for side in ("A", "B") for a in ATTRS]
+    attrs_and_coords += [f"{k}_{side}" for side in ("A", "B") for k in ("x1", "y1", "x2", "y2")]
+    p = pd.DataFrame(pairs, columns=["id", "status", "iou", *attrs_and_coords])
+    im = pd.DataFrame(per_image)
+    for col in attrs_and_coords:
+        p[col] = pd.to_numeric(p[col])
     mt = p[p.status == "matched"]
     n_a, n_b, n_m = im.boxes_A.sum(), im.boxes_B.sum(), im.matched.sum()
     met = {
@@ -215,24 +245,32 @@ def cars(a_path: Path, b_path: Path) -> None:
         "время на рамку, с (A / B)": f"{im.time_A.sum() / max(n_a, 1):.1f} / {im.time_B.sum() / max(n_b, 1):.1f}",
         "доля uncertain, A / B": f"{im.uncertain_A.mean():.3f} / {im.uncertain_B.mean():.3f}",
     }
+    kappas = {}
     for a in ATTRS:
         if len(mt) and (mt[f"{a}_A"].nunique() > 1 or mt[f"{a}_B"].nunique() > 1):
-            met[f"атрибут {a}: PA / kappa"] = (f"{(mt[f'{a}_A'] == mt[f'{a}_B']).mean():.3f} / "
-                                              f"{cohen_kappa_score(mt[f'{a}_A'], mt[f'{a}_B']):.3f}")
+            kappas[a] = cohen_kappa_score(mt[f"{a}_A"], mt[f"{a}_B"])
+            met[f"атрибут {a}: PA / kappa"] = f"{(mt[f'{a}_A'] == mt[f'{a}_B']).mean():.3f} / {kappas[a]:.3f}"
         elif len(mt):
             met[f"атрибут {a}: PA / kappa"] = f"{(mt[f'{a}_A'] == mt[f'{a}_B']).mean():.3f} / не определена"
-    ok = (len(mt) and mt.iou.median() >= 0.80 and abs(n_a - n_b) / ((n_a + n_b) / 2) <= 0.05)
-    met["пороги codebook (медианный IoU ≥ 0,80; расхождение числа ≤ 5 %)"] = (
-        "выполнены" if ok else "НЕ выполнены — разбор и повтор пилота")
+    ok = (len(mt) > 0 and 2 * n_m / (n_a + n_b) >= 0.90 and mt.iou.median() >= 0.80
+          and abs(n_a - n_b) / ((n_a + n_b) / 2) <= 0.05
+          and all(kappas.get(a, np.nan) >= 0.60 for a in ("occluded", "truncated"))
+          and max(im.uncertain_A.mean(), im.uncertain_B.mean()) <= 0.10)
+    met["пороги codebook v1.2 (таблица 13)"] = "выполнены" if ok else "НЕ выполнены"
     p.insert(0, "pair_id", [f"{i}#{k}" for k, i in enumerate(p.id)])
-    dis = p[(p.status != "matched") | (p.get("iou", 1) < 0.8)]
-    save("cars", p.merge(im, on="id", how="left"), met, dis)
+    items = p.merge(im, on="id", how="left")
+    attrs_differ = (items[[f"{a}_A" for a in ATTRS]].to_numpy()
+                    != items[[f"{a}_B" for a in ATTRS]].to_numpy()).any(axis=1)
+    dis = items[(items.status != "matched") | (items.iou < 0.8) | attrs_differ
+                | (items.uncertain_A == 1) | (items.uncertain_B == 1)]
+    save("cars", items, met, dis[p.columns])
     # шаблон сверки: keep=1 — рамка остаётся в gold, keep=0 — удаляется; для пар с низким IoU
     # можно указать, чью рамку взять (use=A|B), иначе координаты усредняются
     res = dis[["pair_id", "id", "status", "iou"]].copy()
     res["keep"] = np.where(res.status == "matched", "1", "")
     res["use"] = ""
     res["note"] = ""
+    res["reviewed"] = ""
     write_template("cars", res)
 
 
@@ -241,5 +279,12 @@ if __name__ == "__main__":
     ap.add_argument("task", choices=["sms", "cars"])
     ap.add_argument("--a", required=True, type=Path, help="выгрузка Label Studio аннотатора A")
     ap.add_argument("--b", required=True, type=Path, help="выгрузка Label Studio аннотатора B")
+    ap.add_argument("--set", choices=STAGES, default="pilot")
     args = ap.parse_args()
+    STAGE = args.set
+    OUT = stage_dir(OUT, STAGE)
+    try:
+        validate_pair(args.task, STAGE, args.a, args.b)
+    except (ValueError, OSError, KeyError) as e:
+        ap.error(str(e))
     sms(args.a, args.b) if args.task == "sms" else cars(args.a, args.b)

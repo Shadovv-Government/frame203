@@ -1,4 +1,4 @@
-"""Проверка выгрузки Label Studio перед расчётом согласия (codebook v1.1, приложение Б).
+"""Проверка выгрузки Label Studio перед расчётом согласия (codebook v1.2, приложение Б).
 
 Запуск:
   python src/check_exports.py sms  labeling/exports/pilot/A_sms.json  --set pilot
@@ -18,15 +18,14 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
-LS = ROOT / "labeling" / "label_studio"
+from annotation_sets import SMS_SUBTYPES, STAGES, expected_ids
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("task", choices=["sms", "cars"])
     ap.add_argument("export", type=Path)
-    ap.add_argument("--set", choices=["pilot", "main"], default="pilot", help="какой набор задач размечался")
+    ap.add_argument("--set", choices=STAGES, default="pilot", help="какой набор задач размечался")
     a = ap.parse_args()
 
     errors, warns = [], []
@@ -39,8 +38,11 @@ def main() -> int:
         print("ERROR: это не полная выгрузка Label Studio. Нужен Export -> JSON (не JSON-MIN, не CSV)")
         return 1
 
-    kind = "sms" if a.task == "sms" else "images"
-    expected = set(pd.read_csv(LS / f"import_{kind}_{a.set}.csv").id)
+    try:
+        expected = expected_ids(a.task, a.set)
+    except ValueError as e:
+        print(f"ERROR: {e}")
+        return 1
     ids = [t.get("data", {}).get("id") for t in tasks]
     dup = [i for i, c in Counter(ids).items() if c > 1]
     if dup:
@@ -60,7 +62,7 @@ def main() -> int:
             continue
         if len(anns) > 1:
             warns.append(f"{tid}: {len(anns)} аннотации — в расчёт идёт последняя; один проект = один аннотатор")
-        ann = anns[-1]
+        ann = max(anns, key=lambda a: a.get("updated_at") or a.get("created_at") or "")
         n_done += 1
         cb = ann.get("completed_by")
         annotators.add(cb.get("id") if isinstance(cb, dict) else cb)
@@ -78,8 +80,8 @@ def main() -> int:
             lab = (choice.get("label") or [""])[0]
             if lab not in ("ham", "spam"):
                 errors.append(f"{tid}: нет метки ham/spam")
-            if lab == "spam" and not choice.get("subtype"):
-                errors.append(f"{tid}: spam без подтипа")
+            if lab == "spam" and (choice.get("subtype") or [""])[0] not in SMS_SUBTYPES:
+                errors.append(f"{tid}: spam без допустимого подтипа")
             if lab == "ham" and choice.get("subtype"):
                 warns.append(f"{tid}: ham, но выбран подтип — подтип будет проигнорирован")
         else:
@@ -88,6 +90,16 @@ def main() -> int:
                 warns.append(f"{tid}: ни одной рамки — верно, только если в кадре нет Car (например, одни такси)")
             for b in boxes:
                 v = b["value"]
+                if v.get("rectanglelabels") != ["Car"]:
+                    errors.append(f"{tid}: рамка должна иметь единственную метку Car")
+                w, h = b.get("original_width"), b.get("original_height")
+                if w and h:
+                    side = min(v.get("width", 0) * w, v.get("height", 0) * h) / 100
+                    if side < 10:
+                        target = warns if a.set == "pilot" else errors
+                        target.append(f"{tid}: меньшая сторона рамки {side:.1f} px (< 10 px, codebook § 8.1)")
+                else:
+                    warns.append(f"{tid}: нет размера изображения для проверки порога в пикселях")
                 if v.get("width", 0) <= 0.2 or v.get("height", 0) <= 0.2:
                     errors.append(f"{tid}: рамка нулевого размера (случайный клик) — удалите её")
                 if v["x"] < -0.5 or v["y"] < -0.5 or v["x"] + v["width"] > 100.5 or v["y"] + v["height"] > 100.5:

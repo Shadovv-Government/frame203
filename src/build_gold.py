@@ -8,7 +8,7 @@
   python src/build_gold.py cars --tag pilot
 
 Правила:
-* SMS: совпавшая у A и B метка — gold; расхождение — решение из файла сверки (пустое решение = ошибка).
+* SMS: gold берётся из согласия либо файла сверки; exclude=1 с причиной исключает сообщение.
 * Рамки: сопоставленная пара — средние координаты (или рамка A / B, если указано use); пара или одиночная рамка
   с keep=0 удаляется; одиночная рамка попадает в gold только при keep=1. Атрибут при расхождении A и B
   ставится (1): пропустить перекрытие хуже, чем отметить лишнее; правило записать в отчёт.
@@ -21,33 +21,60 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[1]
+from annotation_sets import ROOT, STAGES, SMS_SUBTYPES, stage_dir
 ATTRS = ["occluded", "truncated", "group_of", "depiction", "inside"]
 
 
-def read_resolution(name: str) -> pd.DataFrame:
-    path = ROOT / "labeling" / "resolution" / f"{name}_resolution.csv"
+def read_resolution(name: str, tag: str, key: str, required: set[str]) -> pd.DataFrame:
+    path = stage_dir(ROOT / "labeling" / "resolution", tag) / f"{name}_resolution.csv"
     if not path.exists():
         sys.exit(f"нет файла сверки {path}: сначала src/agreement.py, затем заполнить файл")
-    return pd.read_csv(path, encoding="utf-8-sig", dtype=str).fillna("")
+    res = pd.read_csv(path, encoding="utf-8-sig", dtype=str).fillna("")
+    if res[key].duplicated().any() or "" in set(res[key]):
+        sys.exit(f"Повторяющиеся или пустые ID в {path}")
+    res = res.set_index(key)
+    pending = required - set(res.index)
+    if pending:
+        sys.exit(f"Нет решения для {len(pending)} строк: {sorted(pending)[:5]}")
+    if "reviewed" in res:
+        pending = [i for i in required if res.at[i, "reviewed"] not in ("1", "1.0", "true")]
+        if pending:
+            sys.exit(f"Не подтверждена сверка {len(pending)} строк: {sorted(pending)[:5]}")
+    return res
+
+
+def report_file(name: str, tag: str, suffix: str) -> Path:
+    return stage_dir(ROOT / "reports" / "agreement", tag) / f"{name}_{suffix}.csv"
 
 
 def sms(tag: str) -> pd.DataFrame:
-    items = pd.read_csv(ROOT / "reports/agreement/sms_items.csv", dtype=str).fillna("")
-    res = read_resolution("sms").set_index("id")
-    bad = res[~res.gold_label.isin(["ham", "spam"])]
+    items = pd.read_csv(report_file("sms", tag, "items"), dtype=str).fillna("")
+    need = set(pd.read_csv(report_file("sms", tag, "disagreements"), dtype=str).id)
+    res = read_resolution("sms", tag, "id", need)
+    if set(res.index) - set(items.id):
+        sys.exit("В решениях SMS есть ID вне текущего набора")
+    flags = res.get("exclude", pd.Series("", index=res.index))
+    if not flags.isin(["", "0", "1"]).all():
+        sys.exit("Поле exclude принимает 0 или 1")
+    excluded = flags == "1"
+    if (excluded & res.note.str.strip().eq("")).any():
+        sys.exit("Исключённые SMS требуют причины в note")
+    included = res[~excluded]
+    bad = included[~included.gold_label.isin(["ham", "spam"])]
     if len(bad):
         sys.exit(f"не решено {len(bad)} расхождений (gold_label пуст): {list(bad.index[:5])}")
-    bad = res[(res.gold_label == "spam") & (res.gold_subtype == "")]
+    bad = included[(included.gold_label == "spam") & ~included.gold_subtype.isin(SMS_SUBTYPES)]
     if len(bad):
         sys.exit(f"spam без gold_subtype: {list(bad.index[:5])}")
     rows = []
     for r in items.itertuples():
+        if r.id in excluded.index and excluded.at[r.id]:
+            continue
         if r.id in res.index:
             g = res.loc[r.id]
             same = r.label_A == r.label_B and r.subtype_A == r.subtype_B
             rows.append((r.id, g.gold_label, g.gold_subtype if g.gold_label == "spam" else "",
-                         "agreed" if same else "resolved", g.note))
+                         "agreed" if same and (g.gold_label, g.gold_subtype) == (r.label_A, r.subtype_A) else "resolved", g.note))
         else:
             rows.append((r.id, r.label_A, r.subtype_A if r.label_A == "spam" else "", "agreed", ""))
     gold = pd.DataFrame(rows, columns=["id", "label", "subtype", "resolution", "note"])
@@ -56,12 +83,17 @@ def sms(tag: str) -> pd.DataFrame:
 
 
 def cars(tag: str) -> pd.DataFrame:
-    items = pd.read_csv(ROOT / "reports/agreement/cars_items.csv")
-    res = read_resolution("cars").set_index("pair_id")
-    need = items[items.status != "matched"].pair_id
-    undecided = [k for k in need if k not in res.index or res.loc[k, "keep"] not in ("0", "1")]
+    items = pd.read_csv(report_file("cars", tag, "items"))
+    need = set(pd.read_csv(report_file("cars", tag, "disagreements"), dtype=str).pair_id)
+    res = read_resolution("cars", tag, "pair_id", need)
+    key = items.set_index("pair_id")
+    if set(res.index) - set(key.index) or any(
+        (row.id, row.status) != (key.at[i, "id"], key.at[i, "status"]) for i, row in res.iterrows()
+    ):
+        sys.exit("Решения Cars не относятся к текущему отчёту")
+    undecided = [k for k in res.index if res.at[k, "keep"] not in ("0", "1")]
     if undecided:
-        sys.exit(f"не решено {len(undecided)} одиночных рамок (keep пуст): {undecided[:5]}")
+        sys.exit(f"не решено {len(undecided)} рамок (keep пуст или недопустим): {undecided[:5]}")
     rows = []
     for r in items.to_dict("records"):
         dec = res.loc[r["pair_id"]] if r["pair_id"] in res.index else None
@@ -83,13 +115,13 @@ def cars(tag: str) -> pd.DataFrame:
         rows.append({"image_id": r["id"], "x_min": round(box[0], 5), "y_min": round(box[1], 5),
                      "x_max": round(box[2], 5), "y_max": round(box[3], 5), **attrs, "resolution": how,
                      "pair_id": r["pair_id"]})
-    return pd.DataFrame(rows)
+    return pd.DataFrame(rows, columns=["image_id", "x_min", "y_min", "x_max", "y_max", *ATTRS, "resolution", "pair_id"])
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("task", choices=["sms", "cars"])
-    ap.add_argument("--tag", default="pilot", help="pilot или main — попадает в имя файла")
+    ap.add_argument("--tag", choices=STAGES, default="pilot")
     a = ap.parse_args()
     gold = sms(a.tag) if a.task == "sms" else cars(a.tag)
     out = ROOT / "data" / "annotations" / f"{a.task}_gold_{a.tag}.csv"

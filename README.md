@@ -22,14 +22,17 @@
 data/interim/sms_enrichment/   манифест 150 SMS, отчёты дедупликации
 data/interim/car_enrichment/   кандидаты и манифест изображений
 data/processed/images_new_v1/  54 изображения ручного пополнения
-data/annotations/              итоговая разметка (build_gold.py)
+data/annotations/              согласованная разметка по этапам
 docs/                          codebook разметки
 labeling/label_studio/         конфигурации и задачи Label Studio
-labeling/exports/              выгрузки Label Studio: pilot/, main/
-labeling/resolution/           решения сверки (agreement.py)
+labeling/exports/              независимые выгрузки: pilot/, repeat/, main/
+labeling/resolution/           решения сверки; repeat/ и main/ для следующих этапов
 labeling/screenshots/          снимки интерфейса разметки
-notebooks/                     01, 04 — EDA исходных наборов; 02, 05 — ручное пополнение; 03, 06 — обучение
-reports/tables/, reports/figures/, reports/agreement/
+notebooks/                     01, 04 — EDA; 02, 05 — состав пополнения; 07 — анализ разметки
+                               03, 06 — заготовки для обучения
+reports/tables/, reports/figures/  результаты EDA
+reports/agreement/             результаты согласия по этапам
+frame203-review/               локальное приложение сверки
 src/                           скрипты
 ```
 
@@ -54,11 +57,22 @@ Label Studio устанавливается в отдельное окружен
 | Поиск изображений | `python src/build_car_enrichment.py`, затем `python src/build_car_enrichment.py 2` | `data/interim/car_enrichment/candidates.csv` |
 | Контактные листы | `python src/contact_sheet.py <начало> <конец> <файл.jpg>` | лист миниатюр кандидатов |
 | Утверждение набора, задачи разметки | `python src/finalize_enrichment.py` | манифесты, `data/processed/images_new_v1/`, `labeling/label_studio/import_*.csv` |
-| Проверка выгрузки | `python src/check_exports.py <sms\|cars> <выгрузка.json> --set <pilot\|main>` | отчёт об ошибках |
-| Согласие аннотаторов | `python src/agreement.py <sms\|cars> --a <A.json> --b <B.json>` | `reports/agreement/`, `labeling/resolution/` |
-| Итоговая разметка | `python src/build_gold.py <sms\|cars> --tag <pilot\|main>` | `data/annotations/` |
+| Проверка выгрузки | `python src/check_exports.py <sms\|cars> <выгрузка.json> --set <pilot\|repeat\|main>` | отчёт об ошибках |
+| Согласие аннотаторов | `python src/agreement.py <sms\|cars> --a <A.json> --b <B.json> --set <pilot\|repeat\|main>` | `reports/agreement/`, `labeling/resolution/` |
+| Итоговая разметка | `python src/build_gold.py <sms\|cars> --tag <pilot\|repeat\|main>` | `data/annotations/` |
 
 Исходные наборы размещаются в `data/raw/` в соответствии с путями в ноутбуках 01 и 04. Результат поиска изображений зависит от даты запроса; набор, использованный в работе, зафиксирован в `data/interim/car_enrichment/candidates.csv`. Seed — 42.
+
+## Этапы ручной разметки
+
+| Набор | `pilot` | `repeat` | `main` |
+|---|---|---|---|
+| SMS | 60 сообщений, пороги выполнены | — | 90 сообщений |
+| Cars | 30 изображений, пороги не выполнены | 10 новых для обоих аннотаторов | 14 оставшихся из `import_images_main.csv` после повторного пилота |
+
+Исходный список 24 изображений — `import_images_main.csv`. Для повторного пилота используется `import_images_repeat.csv` (10 изображений, представлены все пять страт; четыре кадра с плотным трафиком). Для основной разметки используется `import_images_main_remaining.csv` (14 изображений). Выгрузки хранятся в каталогах этапов; отчёты и таблицы сверки `repeat` и `main` записываются в одноимённые подкаталоги. Независимые метрики рассчитываются до сверки.
+
+В пилотном gold: 59 SMS (одна запись исключена по § 9.2 codebook v1.2), 115 рамок на 30 изображениях. Gold пилота Cars — результат сверки; он не подтверждает выполнение порогов согласия. При сборке обучающего набора исключаются рамки `depiction`.
 
 ## Использование языковых моделей
 
