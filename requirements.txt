@@ -1,0 +1,9 @@
+# Python 3.12. Label Studio устанавливается в отдельное окружение: pip install label-studio
+pandas>=2.2
+numpy>=2.0
+scikit-learn>=1.6
+scipy>=1.13
+matplotlib>=3.9
+pillow>=11.0
+requests>=2.32
+ipykernel>=6.29

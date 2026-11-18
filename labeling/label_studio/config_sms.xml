@@ -1,0 +1,24 @@
+<!-- Label Studio: классификация SMS по codebook v1.1 (раздел 7). Горячие клавиши: 1 = ham, 2 = spam, u = uncertain -->
+<View>
+  <Header value="Сообщение $id — прочитайте целиком, затем пройдите дерево решений (codebook, 7.3)"/>
+  <Text name="text" value="$text"/>
+  <Choices name="label" toName="text" choice="single" required="true" showInline="true">
+    <Choice value="ham" hotkey="1"/>
+    <Choice value="spam" hotkey="2"/>
+  </Choices>
+  <View visibleWhen="choice-selected" whenTagName="label" whenChoiceValue="spam">
+    <Header value="Подтип спама (узел дерева, на котором принято решение)" size="6"/>
+    <Choices name="subtype" toName="text" choice="single" showInline="true" required="true">
+      <Choice value="smishing"/>
+      <Choice value="fraud"/>
+      <Choice value="prize"/>
+      <Choice value="premium"/>
+      <Choice value="promo"/>
+    </Choices>
+  </View>
+  <Choices name="uncertain" toName="text" choice="single" showInline="true">
+    <Choice value="uncertain" hotkey="u"/>
+  </Choices>
+  <TextArea name="comment" toName="text" rows="2" maxSubmissions="1"
+            placeholder="Обязательно при uncertain: какой узел дерева вызвал сомнение (не более 200 символов)"/>
+</View>
