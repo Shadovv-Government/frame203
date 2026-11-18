@@ -24,3 +24,14 @@ work/
 
 # Резервные копии совместной сверки
 labeling/resolution/backups/
+# Датасеты и пообъектная разметка хранятся на Google Диске
+/data/interim/
+/data/processed/
+/data/annotations/
+/labeling/label_studio/import_*.csv
+/labeling/exports/**
+!/labeling/exports/*/
+!/labeling/exports/*/.gitkeep
+/labeling/resolution/
+/reports/agreement/**/*_items.csv
+/reports/agreement/**/*_disagreements.csv

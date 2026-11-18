@@ -8,15 +8,20 @@
 
 ## Наборы данных
 
+[Материалы промежуточной сдачи](https://drive.google.com/drive/folders/1Jqkw4sQtOR8rJNyGxexAo2-O_xVQ8aFP) · [Архив данных и разметки](https://drive.google.com/file/d/1hob2zzeKdkTNSeZA5WCQ0TzLKObkU0lu/view?usp=drivesdk)
+
+Распакуйте архив в корень репозитория. Данные, задачи Label Studio, независимые выгрузки, таблицы сверки, gold и пообъектные отчёты хранятся на Google Диске. В Git остаются код, конфигурации, ноутбуки, сводные метрики и примеры интерфейса.
+
+
 | Набор | Источник | Лицензия | Расположение |
 |---|---|---|---|
-| UCI SMS Spam Collection | DOI 10.24432/C5CC84 | CC BY 4.0 | `data/raw/uci/` (не включается в репозиторий) |
-| Open Images V7, validation, класс Car | <https://storage.googleapis.com/openimages/web/download_v7.html> | аннотации CC BY 4.0, изображения CC BY 2.0 | `data/raw/oi/` (не включается в репозиторий) |
+| UCI SMS Spam Collection | DOI 10.24432/C5CC84 | CC BY 4.0 | `data/raw/sms/` |
+| Open Images V7, validation, класс Car | <https://storage.googleapis.com/openimages/web/download_v7.html> | аннотации CC BY 4.0, изображения CC BY 2.0 | `data/raw/openimages/` |
 | NUS SMS Corpus | DOI 10.25540/WVM0-4RNX | CC BY 4.0 | `data/interim/sms_enrichment/` |
 | SMS Phishing Dataset (Mishra, Soni) | DOI 10.17632/f45bkkt8pr.1 | CC BY 4.0 | `data/interim/sms_enrichment/` |
 | Wikimedia Commons | ссылка на каждый файл в манифесте | CC0, Public domain, CC BY, CC BY-SA | `data/processed/images_new_v1/` |
 
-## Структура репозитория
+## Структура проекта после распаковки
 
 ```
 data/interim/sms_enrichment/   манифест 150 SMS, отчёты дедупликации
@@ -61,7 +66,7 @@ Label Studio устанавливается в отдельное окружен
 | Согласие аннотаторов | `python src/agreement.py <sms\|cars> --a <A.json> --b <B.json> --set <pilot\|repeat\|main>` | `reports/agreement/`, `labeling/resolution/` |
 | Итоговая разметка | `python src/build_gold.py <sms\|cars> --tag <pilot\|repeat\|main>` | `data/annotations/` |
 
-Исходные наборы размещаются в `data/raw/` в соответствии с путями в ноутбуках 01 и 04. Результат поиска изображений зависит от даты запроса; набор, использованный в работе, зафиксирован в `data/interim/car_enrichment/candidates.csv`. Seed — 42.
+Архив содержит исходный UCI и таблицы Open Images для ноутбуков 01 и 04. Для повторного запуска скриптов сбора см. `DATA_README.txt` в архиве. Результат поиска изображений зависит от даты запроса; набор, использованный в работе, зафиксирован в `data/interim/car_enrichment/candidates.csv`. Seed — 42.
 
 ## Этапы ручной разметки
 
